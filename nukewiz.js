@@ -4,7 +4,8 @@ $(document).ready(function(){
   questNumber = 0;
 
   //Big Go
-  $('#biggo').click(function(){
+  $('#biggo-button').click(function(){
+    console.log("hey")
     //Fills in question information and answers
     populate();
     //start the timer
