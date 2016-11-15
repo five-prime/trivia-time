@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trivia Time | Controller</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.2.5.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="monscript.js"></script>
+
+</head>
+<body>
+
+  <div class="alert">
+  <span class="glyphicon glyphicon-remove-circle pull-right" id="close-button" aria-hidden="true" onclick="this.parentElement.style.display='none';"></span>
+</span>
+<div class="text-center"><h1>Please Enter Game Name: <p></h1>
+<input type="text" id="userInput">
+<h2>Please Enter Number Of Players: <p><input type="number" id="userNumber" max="10">
+<button class="btn btn-primary btn-lg" id="clicky">Enter</button>
+</div>
+
+</div>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div id="banner-top" class="text-center">
+
+      <h1>
+        Welcome To:
+        <p>
+        <span class="channel-name"></span></h1>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-xs-12 text-center">
+<h1>This is the display!</h1>
+<h2>Your questions will begin when everyone is ready!</h2>
+<h3>Players please nagivate to: https://trivia-time.firebaseapp.com/controller and enter in code:         <span class="channel-name"></span></h1>
+</div>
+<span id="timer"></span>
+</h1>
+</div>
+<div class="row">
+<div id="contain-boxes">
+  <div class="col-xs-1 icon-contain"></div>
+  <div class="col-xs-1 icon-contain" id="penguin"><img class="img-circle" src="img/penguin.png"><span class="badge go-time">ready!</span><span class="badge no-go-time">not ready</span></div>
+  <div class="col-xs-1 icon-contain" id="gator"><img class="img-circle" src="img/gator.png"><span class="badge go-time">ready!</span><span class="badge no-go-time">not ready</span></div>
+  <div class="col-xs-1 icon-contain" id="bear"><img class="img-circle" src="img/bear.png"><span class="badge go-time">ready!</span><span class="badge no-go-time">not ready</span></div>
+  <div class="col-xs-1 icon-contain" id="bunny"><img class="img-circle" src="img/bunny.png"><span class="badge go-time">ready!</span><span class="badge no-go-time">not ready</span></div>
+  <div class="col-xs-1 icon-contain" id="kitty"><img class="img-circle" src="img/kitty.png"><span class="badge go-time">ready!</span><span class="badge no-go-time">not ready</span></div>
+  <div class="col-xs-1 icon-contain" id="dog"><img class="img-circle" src="img/dog.png"><span class="badge go-time">ready!</span><span class="badge no-go-time">not ready</span></div>
+  <div class="col-xs-1 icon-contain" id="rhino"><img class="img-circle" src="img/rhino.png"><span class="badge go-time">ready!</span><span class="badge no-go-time">not ready</span></div>
+  <div class="col-xs-1 icon-contain" id="sloth"><img class="img-circle" src="img/sloth.png"><span class="badge go-time">ready!</span><span class="badge no-go-time">not ready</span></div>
+  <div class="col-xs-1 icon-contain" id="monkey"><img class="img-circle" src="img/monkey.png"><span class="badge go-time">ready!</span><span class="badge no-go-time">not ready</span></div>
+  <div class="col-xs-1 icon-contain" id="raccoon"><img class="img-circle" src="img/raccoon.png"><span class="badge go-time">ready!</span><span class="badge no-go-time">not ready</span></div>
+  <div class="col-xs-1 icon-contain"></div>
+</div>
+<div class="row">
+
+</div>
+</div>
+  </div> <!--- ./container -fluid --->
+
+
+
+</body>
+
+</html>

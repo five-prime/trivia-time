@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trivia Time | Controller</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.2.5.js"></script>
+
+  <script src="controlScript.js"></script>
+
+</head>
+<body>
+  <div class="selectAlert">
+  <span class="glyphicon glyphicon-remove-circle pull-right" id="close-button" aria-hidden="true" onclick="this.parentElement.style.display='none';"></span>
+</span>
+<div class="text-center"><h1> Do You Want To Be: <p><div class="player-choice"></div></h1>
+ <button type="button" class="btn btn-success btn-lg pull-left" id="yes-button">Yes</button>
+ <button type="button" class="btn btn-danger btn-lg pull-right" id="close-button">No</button>
+</div>
+</div>
+<div class="alert">
+</span>
+<div class="text-center"><h1>Please Enter Game Name: <p></h1>
+<input type="text" id="userInput">
+<button class="btn btn-primary btn-lg" id="clicky">Enter</button>
+</div>
+
+</div>
+
+
+</div>
+<div id="else" class="container-fluid">
+
+  <div class="row">
+    <div class="jumbotron text-center">
+
+      <h1>
+        Welcome To:
+      </h1>
+        <p>
+        <h2><span id="channel-name"></span></h2>
+    </div>
+
+  </div>
+  <div class="row text-center">
+<h1 id="select-banner"> Select Your Character</h1>
+    <div class="col-xs-12">
+      <div class="row">
+        <div class="col-xs-6">
+
+          <img src="img/penguin.png" class="img-responsive img-rounded select" id="penguin">
+
+        </div>
+        <div class="col-xs-6">
+          <img src="img/raccoon.png" class="img-responsive img-rounded select" id="raccoon">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <img src="img/kitty.png" class="img-responsive img-rounded select" id="kitty">
+
+        </div>
+        <div class="col-xs-6">
+          <img src="img/sloth.png" class="img-responsive img-rounded select" id="sloth">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <img src="img/dog.png" class="img-responsive img-rounded select" id="dog">
+
+        </div>
+        <div class="col-xs-6">
+
+          <img src="img/bunny.png" class="img-responsive img-rounded select" id="bunny">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <img src="img/gator.png" class="img-responsive img-rounded select" id="gator">
+
+        </div>
+
+        <div class="col-xs-6">
+          <img src="img/monkey.png" class="img-responsive img-rounded select" id="monkey">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <img src="img/rhino.png" class="img-responsive img-rounded select" id="rhino">
+
+        </div>
+
+        <div class="col-xs-6">
+          <img src="img/bear.png" class="img-responsive img-rounded select" id="bear">
+
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+
+<div id ="ready-box" class="text-center"><h1>
+  <div class="player-choice"></div>
+  <p>
+    <div id="not-ready-display"><span>You are: NOT READY</span><p></div>
+      <p>
+    <div id="ready-display"><span>You are: READY</span></div>
+    <p>
+<button class="btn btn-success btn-lg" id="ready-button"><span class="glyphicon glyphicon-star-empty"></span>Let's Go!</button>
+<p>
+<button class="btn btn-warning btn-lg" id="not-ready-button"><span class="glyphicon glyphicon-star"></span>Wait!</button>
+<p>
+
+
+<span id="timer"></span>
+</h1>
+</div>
+  </div> <!--- ./container -fluid --->
+
+</div>
+
+</body>
+
+</html>

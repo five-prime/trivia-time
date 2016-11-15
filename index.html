@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trivia Time | Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.2.5.js"></script>
+
+  <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+<script>
+
+</script>
+
+  <div class="jumbotron text-center">
+    <h1 class="page-header">Welcome to Trivia Time</h1>
+    <button class="btn btn-lg btn-primary" id="big-go">Let's Play!</button>
+    <h1 class="page-header">Your Game Name Is: <span class="game-name"></span>
+      <p>
+      <a href="monitor.html"><button class="btn btn-lg btn-primary" id="monitor-go">Go To Monitor</button></a>
+
+  </div>
+  <div id="bottom-banner" class="text-center">
+    <div id="stretch"><span class="glyphicon glyphicon-arrow-up"</div>
+  <h2>How To Play</h2>
+  <div class="container" id="howto">
+    <div class="row">
+      <div class="col-xs-2">1. Click "Let's Play!" button above to get your game name
+</div>
+      <div class="col-xs-2">2. On a large display that everyone can see navigate to: https://trivia-time.firebaseapp.com/monitor
+</div>
+      <div class="col-xs-2">3. On the remote controls navigate to https://trivia-time.firebaseapp.com/controller</div>
+      <div class="col-xs-2">4. Enter in your game name</div>
+      <div class="col-xs-2">5. Select your player icon and click ready
+</div>
+      <div class="col-xs-2">6. Enjoy!
+</div>
+
+    </div>
+
+  </div> <!--- ./container --->
+</div> <!--- ./howto --->
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDMvU9zG7wDNToCe_S9C0AlRz3Ueln-_88",
+      authDomain: "trivia-time-d6aa3.firebaseapp.com",
+      databaseURL: "https://trivia-time-d6aa3.firebaseio.com",
+      storageBucket: "trivia-time-d6aa3.appspot.com",
+      messagingSenderId: "556461021563"
+    };
+    firebase.initializeApp(config);
+    </script>
+  </body>
+
+
+</html>

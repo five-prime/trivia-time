@@ -1,0 +1,40 @@
+navigate to trivia-time.firebaseapp.com
+Initiate gaming session -player numbers
+  *code is created: Luke
+Big Board URL is provided
+  *please navigate your TV to trivia-time.firebaseapp.com/display and enter "Luke"
+  *Players please navigate to trivia-time.firebaseapp.com/player and enter "Luke"
+
+  Big Board URL:
+    Displays Players in Game
+    Display open slots and provide dynamic URL "Players please navigate to trivia-time.firebaseapp.com/player and enter "Luke""
+
+    Controller URL:
+      Welcome to Luke!
+      Enter player name: __________
+      [Enter]
+      *Ready / * Not Ready
+      Send Player Name / Ready to big board
+
+    Big Board:
+      Received 4/4 Ready
+      Question 1: Timer 60 seconds
+
+    Controller:
+      4 Answers and timer at top
+    Big Board:
+      Correct Answer
+      Leaderboard
+      Countdown to next question
+
+
+
+How to Play:
+
+
+1. Click "Let's Play!" button above to get your game name
+2. On a large display that everyone can see navigate to: https://trivia-time.firebaseapp.com/monitor
+3. On the remote controls navigate to https://trivia-time.firebaseapp.com/controller
+4. Enter in your game name
+5. Select your player icon and click ready
+6. Enjoy!
