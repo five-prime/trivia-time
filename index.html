@@ -1,0 +1,95 @@
+<!doctype HTML>
+
+<html>
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Trivia Time</title>
+
+    <!---
+    Frameworks
+    --->
+
+    <!--- jQuery first --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!--- Bootstrap --->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--- Pubnub --->
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.2.5.js"></script>
+
+    <!---
+    Local Imports
+    --->
+    <!--- questions --->
+    <script src="/scripts/questions.js"></script>
+
+    <!--- main JS file --->
+    <script src="/scripts/app.js"></script>
+
+    <!---main styles --->
+    <link rel="stylesheet" href="/styles/styles.css">
+
+  </head>
+
+<body>
+<style>
+
+</style>
+
+
+<div class="container-fluid">
+<div class="row content">
+  <div class="col-sm-3 sidenav">
+    <h4>Trivia Time</h4>
+    <ul class="nav nav-pills nav-stacked">
+      <li class="active"><a href="#section1">Learn More</a></li>
+      <li><a href="#section2">Contact</a></li>
+      <li><a href="#section3">Family</a></li>
+      <li><a href="#section3">Photos</a></li>
+    </ul><br>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search Blog..">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+  <div class="col-sm-9">
+    <h4><small>Welcome To Trivia Time</small></h4>
+    <hr>
+    <h2>Get Started</h2>
+    <a href="" role="button" class="btn btn-primary btn-lg"><h5><span class="glyphicon glyphicon-time"></span></a> Post by Jane Dane, Sep 27, 2015.</h5>
+    <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+    Content Here
+    <br><br>
+
+    <h4><small>RECENT POSTS</small></h4>
+    <hr>
+    <h2>Officially Blogging</h2>
+    <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+    <h5><span class="label label-success">Lorem</span></h5><br>
+    Content Here
+    <hr>
+
+
+        </div>
+      </div>
+    </div> <!--- ./container-fluid --->
+
+
+<footer class="container-fluid">
+<p>Footer Text</p>
+</footer>
+
+  </body>
+
+
+</html>
